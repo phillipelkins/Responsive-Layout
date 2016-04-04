@@ -1,0 +1,326 @@
+/**************************
+BASE Element STYLES
+**************************/
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+}
+
+p {
+    font-size: .95em;
+    margin-bottom: 1.8em;
+}
+
+h2,
+h3 {
+    color: #414141;
+    text-align: center;
+    padding: 25px 0 45px 0;
+    clear: both;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #414141;
+    font-weight: 600;
+}
+
+img {
+    max-width: 85%;
+}
+
+/**************************
+BASE Layout STYLES
+**************************/
+/* ---- Navigation ---- */
+.name {
+    font-size: 3.5em;
+    margin: 0 auto;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.name a,.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.main-nav a {
+    font-size: .95em;
+    color: #414141;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 25px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.main-nav a:hover {
+    color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.profile {
+    float: right;
+}
+
+.intro {
+    text-align: center;
+    color: #414141;
+    background: #f5f5f5;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.intro p {
+    text-align: center;
+}
+
+.intro img {
+    margin: 0 auto;
+}
+
+.container {
+    background: #fff;
+    padding: 35px 15px;
+}
+
+.container p {
+    max-width: 75%;
+    padding: 5px 0 20px;
+    margin: 0 auto;
+}
+
+.col {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact {
+    text-align: center;
+    background: #f5f5f5;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    padding: .5em 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    visibility: hidden;
+}
+
+.footer-name {
+    float: left;
+    padding: 5px;
+    margin: 0;
+}
+
+.top {
+    float: right;
+    padding: 5px;
+    margin: 0;
+    clear: right;
+}
+
+/* ---- intro ---- */
+/**************************
+MEDIA QUERIES
+**************************/
+@media (min-width: 768px) {
+    .name {
+        font-size: 1.25em;
+        margin: 0 auto;
+    }
+
+    .main-header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .main-nav a {
+        font-size: .95em;
+        color: #414141;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: #f5f5f5;
+        padding: 10px 5px;
+    }
+
+    .profile {
+        float: right;
+    }
+
+    .intro {
+        width: 90%;
+        text-align: center;
+        color: #414141;
+        background: #f5f5f5;
+        margin: 0 auto;
+    }
+
+    .intro p {
+        text-align: left;
+        float: left;
+        max-width: 45%;
+    }
+
+    .intro img {
+        float: right;
+        margin: 0 auto;
+        max-width: 45%;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .col {
+        float: left;
+    } 
+    
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth,
+    .seventh,
+    .eighth,
+    .ninth,
+    .tenth,
+    .eleventh,
+    .twelfth {
+        width: 45%;
+    }
+
+    .main-nav li {
+        display: inline-block;
+    }
+
+    p {
+        font-size: 1.15em;
+    }
+
+    .top {
+        visibility: hidden;
+    }
+
+    footer ul {
+        list-style: none;
+        float: right;
+        font-weight: 600;
+        visibility: visible;
+        padding: 5px;
+    }
+
+    footer li {
+        display: inline;
+        padding: 0 10px 0 10px;
+    }
+    
+    /* ---- Float clearfix ---- */
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+}
+}
+
+@media (min-width: 1024px) {
+    .main-header {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+    .main-footer {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+    .name,
+    .col {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .intro {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth,
+    .seventh,
+    .eighth,
+    .ninth,
+    .tenth,
+    .eleventh,
+    .twelfth {
+        width: 30%;
+        max-width: 1150px;
+    }
+
+    #contact {
+        width: 80%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .col p {
+        font-size: 1em;
+    }
+
+    #contact p {
+        width: 50%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0 auto;
+    }
+
+    hr {
+        max-width: 80%;
+    }
+}
